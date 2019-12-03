@@ -1,5 +1,6 @@
 from birgitta.schema.schema import Schema
-from newsltd_etl.shared.schema.catalog.tribune_chronicle import catalog
+
+from .....shared.schema.catalog.tribune_chronicle import catalog
 
 fields = [
     ['customer_id', 'bigint'],

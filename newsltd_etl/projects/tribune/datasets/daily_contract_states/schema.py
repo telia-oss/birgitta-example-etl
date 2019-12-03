@@ -1,5 +1,6 @@
 from birgitta.schema.schema import Schema
-from newsltd_etl.shared.schema.catalog.tribune import catalog
+
+from .....shared.schema.catalog.tribune import catalog
 
 FIELDS = [
     ['datestamp', 'date'],

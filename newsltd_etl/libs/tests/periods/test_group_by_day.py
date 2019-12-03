@@ -10,7 +10,7 @@ from pyspark.sql.types import StringType
 from pyspark.sql.types import StructField
 from pyspark.sql.types import StructType
 
-from ... import periods
+from ....libs import periods
 
 
 @pytest.fixture(scope="session")
