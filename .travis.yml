@@ -21,12 +21,12 @@ addons:
     packages:
       - axel
 install:
-  # Download spark 2.3.3
+  # Download spark 2.3.2
   # - jdk_switcher use oraclejdk8 # cmd not found
   - export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64 # Hack to get JAVA_HOME and PATH correct even if `language` above is not Java
-  - "[ -f spark ] || mkdir spark && cd spark && axel http://archive.apache.org/dist/spark/spark-2.3.3/spark-2.3.3-bin-hadoop2.7.tgz && cd .."
-  - "tar -xf ./spark/spark-2.3.3-bin-hadoop2.7.tgz"
-  - "export SPARK_HOME=`pwd`/spark-2.3.3-bin-hadoop2.7"
+  - "[ -f spark ] || mkdir spark && cd spark && axel http://archive.apache.org/dist/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgz && cd .."
+  - "tar -xf ./spark/spark-2.3.2-bin-hadoop2.7.tgz"
+  - "export SPARK_HOME=`pwd`/spark-2.3.2-bin-hadoop2.7"
   - echo "spark.yarn.jars=$SPARK_HOME/jars/*.jar" > $SPARK_HOME/conf/spark-defaults.conf
   # Install Python deps.
   - pip install -r requirements_dev.txt
