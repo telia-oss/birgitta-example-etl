@@ -1,1 +1,1 @@
-birgitta==0.1.9
+birgitta==0.1.12

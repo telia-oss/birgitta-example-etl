@@ -1,6 +1,8 @@
+from birgitta.schema.fixtures import ExampleVal
 from birgitta.schema.fixtures import values as v
 from birgitta.schema.schema import Schema
-from newsltd_etl.shared.schema.catalog.tribune import catalog
+
+from .....shared.schema.catalog.tribune import catalog
 
 FIELDS = [
     ["sequence_no", "bigint"],
@@ -14,7 +16,7 @@ FIELDS = [
     ["product_name", "string"],
     ["brand_name", "string"],
     ["start_date", "date"],
-    ["end_date", "date", {"example": {"fn": v.today}}],
+    ["end_date", "date", ExampleVal(v.today())],
     ["shop_code", "string"],
     ["product_category", "string"]
 ]

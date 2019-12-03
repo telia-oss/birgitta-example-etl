@@ -1,5 +1,6 @@
 from birgitta.schema.schema import Schema
-from newsltd_etl.shared.schema.catalog.chronicle import catalog
+
+from .....shared.schema.catalog.chronicle import catalog
 
 FIELDS = [
     ['accountid', 'bigint'],
