@@ -35,7 +35,7 @@ configure:
 	pip install -r requirements.txt
 	pip install -r requirements_dev.txt
 
-get_examples:
+get_examples: # USE sync_examples
 	python "$(SRC_DIR)/pull_birgitta_examples.py"
 
 sync_examples: get_examples configure test
