@@ -1,2 +1,2 @@
-birgitta==0.1.18
+birgitta==0.1.30
 pyspark==2.3.3
